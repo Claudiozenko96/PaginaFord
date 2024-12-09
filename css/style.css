@@ -18,7 +18,7 @@ html{
 
 .img{
     height: 80vh;
-    background-image: url('./img/section-img/Shelby-GT500.jpg');
+    background-image: url('../img/section-img/Shelby-GT500.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
