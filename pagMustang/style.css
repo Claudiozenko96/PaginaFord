@@ -1,0 +1,350 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-origin: content-box;
+    height: 100vh;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.img{
+    height: 80vh;
+    background-image: url('./img/section-img/Shelby-GT500.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+
+}
+
+/* Section Header */
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 190px;
+    background-color: rgba(150, 175, 194, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+}
+
+
+header img{ 
+    width: 150px;
+    height: 70px;
+    padding: 5px 10px;
+    text-align: center;
+    object-fit:contain;
+    border-radius: 35px;
+    background-color:  rgb(255, 255, 255);
+}
+
+
+header nav a{
+    font-size: 1.2em;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: 0.9s, background-color 0.8s ;
+    margin-left: 8px;
+    border-radius: 35px;
+}
+
+header nav a.home {
+    background-color: rgb(255, 255, 255);
+    color: rgba(3, 34, 80, 0.774);
+  }
+
+
+header nav a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgba(3, 34, 80, 0.774);
+}
+
+header nav:hover > a:not(:hover){
+    background: none;
+    color: aliceblue;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(3, 34, 80, 0.774);
+}
+
+/*Section history*/
+
+.title-history{
+    font-size: 2.6em;
+    margin-top: 80px;
+    color: rgb(212, 212, 212);
+    letter-spacing: 2px;
+    border-bottom: 2px solid rgb(235, 235, 235);
+}
+
+
+.history{
+    max-width: 1400px;
+    padding: 50px 38px ;
+    color: rgb(212, 212, 212);
+    
+}
+
+
+.img-presentacion{
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    
+    
+}
+
+.img-presentacion img {
+    width: 100%;
+    overflow:hidden;
+    object-fit: cover;
+    border-radius: 20px;
+
+ }
+
+
+/* Section Image*/
+
+#imagenes{
+    max-width: 1400px;
+    padding: 18px;
+    text-align: center;
+    align-items: center;
+}
+
+.section-img{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.6em;
+    margin-bottom: 25px;
+    color: rgb(212, 212, 212);
+    letter-spacing: 1px;
+}
+
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 15px; 
+    max-width: 100%; 
+    margin: 0 auto;
+    padding: 20px;
+  
+
+}
+
+.card img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Section Modal*/
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.04); /* Efecto hover para resaltar las imágenes */
+  
+}
+  
+  /* Estilos para el modal */
+  .modal {
+    display: none; /*Inicialmente está oculto*/
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    overflow: auto;
+    padding-top: 120px; /* Espacio en la parte superior */
+  }
+  
+  /* Imagen en el modal */
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* Limitar el tamaño máximo de la imagen */
+    max-height: 80%;
+    object-fit: contain;
+  }
+  
+  /* Estilo para el cierre del modal */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  /* Section Motor*/
+  
+#motor{
+    max-width: 1500px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.title-motor{
+    display: flex;
+    justify-content: center;
+    font-size: 2.6em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: rgb(212, 212, 212);
+    letter-spacing: 2px;
+}
+
+.section-video video{
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+.motor-img-desc img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+
+.motor-desc{
+    color: rgb(212, 212, 212);
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+
+
+@media (max-width:750px) {
+    .img{
+        height: 50vh;
+        background-attachment: scroll;
+    }
+
+    header{
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    header img{ 
+        width: 140px;
+        height: 60px;
+        padding: 5px 5px;
+        margin-top: 0px;
+        margin-bottom: 130px;
+        object-fit:contain;
+    }
+    
+    header nav a{
+        height: 40px;
+        font-size: 1em;
+    }
+
+    header .navegacion a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-presentacion{
+        max-width: 1400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;    
+        
+    }
+    
+    .img-presentacion img {
+        width: 100%;
+        max-width: 650px;
+        border-radius: 20px;
+     }
+
+
+     .card{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 13px; 
+    }
+
+    .section-img{
+        margin: 0 auto;
+        font-size: 2.1em;
+        margin-bottom: 5px;
+    }
+
+
+    #motor{
+        max-width: 650px;
+    }
+    
+    
+    .title-motor{
+        font-size: 2.1em;
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+
+    }
+    .section-video video{
+        margin-bottom: 50px;
+    }
+
+
+}
